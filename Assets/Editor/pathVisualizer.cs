@@ -14,10 +14,10 @@ public class pathVisualizer : Editor
 		{
 			Handles.color = Color.red;
 			if (e.canMove == movement.BOTH)
-				Handles.CircleCap(0,
+				Handles.CircleHandleCap(0,
 				                  e.transform.position + new Vector3(0,0.5f,0),
-		                  Camera.main.transform.rotation,
-		                  e.moveRadius);
+		                  Camera.main.transform.rotation, 
+		                  e.moveRadius, EventType.Ignore);
 			else if (e.canMove == movement.HORISONTAL)
 			{
 

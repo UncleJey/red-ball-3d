@@ -19,7 +19,7 @@ public class MenuManager : MonoBehaviour
 	void Awake()
 	{
 		QualitySettings.vSyncCount = 0;
-		Application.targetFrameRate = 40;
+		Application.targetFrameRate = 60;
 	}
 
 	void Start()
